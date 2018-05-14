@@ -1,0 +1,30 @@
+<?php
+/** @var \Mateus\Novo\Block\WeatherBlock $block */
+?>
+<?php
+    $result = $block->getWeatherInformation();
+    $main = $result->weather[0]['main'];
+    $description = $result->weather[0]['description'];
+    $temp = $result->main['temp'];
+    $temp_min = $result->main['temp_min'];
+    $temp_max = $result->main['temp_max'];
+    $umid = $result->main['humidity'];
+?>
+<h1 id="label_try"><?php echo $block->getLabel(); ?> </h1>
+
+<button id="weather_button">Show Weather</button>
+<div id="show_weather"></div>
+<script type="text/javascript">
+    require(["jquery"],function($) {
+        $(document).ready(function() {
+            $('#weather_button').click(function(){
+                var info = '<?php echo "The weather in London is $main, probably with $description." . '<br>' .
+                    "The temperatutur now is $temp Kelvin, with minimun for today of $temp_min Kelvin and maximun $temp_max Kelvin." . '<br>' .
+                    "The humidity is $umid%"; ?>';
+
+                $('#show_weather').html(info);
+            });
+        });
+    });
+</script>
+

@@ -1,10 +1,10 @@
-#Magento 2 Module/test- Weather API implementation
+# Magento 2 Module/test- Weather API implementation
 
 This is a simple module in magento 2, I used to learn more about the features of magento 2 modules and working with Api inside magento2.
 
-##Installation:
+## Installation:
 
-###Manual:
+### Manual:
 
 1. Clone the repository or download zip and add to `<your-magento2-root-directory>/app/code/Mateus/Novo`
 
@@ -22,7 +22,7 @@ This is a simple module in magento 2, I used to learn more about the features of
 
 6. Change the city for your desired city (London as default) in `Mateus/Novo/Model/Weather.php`
     
-###Via composer
+### Via composer
 
 1. Update `composer.json` at the root of your Magento 2 directory:
 
@@ -49,6 +49,6 @@ This is a simple module in magento 2, I used to learn more about the features of
 
         bin/magento module:status
 
-##Information:
+## Information:
 
 Please do not expect any help or bug fixing from me, this is only a trial module for learning proposes. I'm always open for tips or improvements in my code.

@@ -2,8 +2,7 @@
   "name": "mateus/novo",
   "description": "Magento 2 test module",
   "require": {
-    "php": ">=5.2.0",
-    "magento/framework": "100.0.*|100.1.*"
+    "php": ">=5.2.0"
   },
   "type": "magento2-module",
   "version": "1.0.3",

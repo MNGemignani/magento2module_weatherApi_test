@@ -10,11 +10,11 @@ This is a simple module in magento 2, I used to learn more about the features of
 
 2. Enable module
 
-    `bin/magento module:enable Mateus_Novo`
+        bin/magento module:enable Mateus_Novo
     
 3. Register module
   
-    `bin/magento setup:upgrade`
+        bin/magento setup:upgrade
     
 4. Go to https://openweathermap.org/api and get your Api keys
 
@@ -28,26 +28,26 @@ This is a simple module in magento 2, I used to learn more about the features of
 
     a. Add to the `repositories` array:
 
-        `{
+        {
             "type": "vcs",
             "url":  "git@github.com:MNGemignani/magento2module_weatherApi_test.git"
-         }`
+         }
 
     b. Add the following to the `require` object:
 
-        `"mateus/novo": "dev-master"`
+        "mateus/novo": "dev-master"
         
 2. Fetch the module:
 
-        `composer update mateus/novo`
+        composer update mateus/novo
 
 3. Register the module:
 
-        `bin/magento setup:upgrade`
+        bin/magento setup:upgrade
 
 4. Verify the module is installed:
 
-        `bin/magento module:status`
+        bin/magento module:status
 
 ## Information:
 
